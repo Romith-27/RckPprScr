@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOD IS GOOD</title>
+    <link rel="stylesheet" href="rpsmod.css">
+    <style>
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+    <script src="rpsmod.js"></script>
+</head>
+<body id="body">
+    <nav style="display: flex;justify-content: flex-end;">
+        <a href="rps.html" style="text-decoration: none;color: black;"><div><button class="MOD">NOHACK</button></div></a>
+    </nav>
+    <div class="cont">
+        <div class="rps">
+            <div style="border-radius: 50%;"><img src="assets/0.png" alt="paper" class="imga" onclick=spin0()></div>
+            <div style="border-radius: 50%;"><img src="assets/1.png" alt="scissors" class="imga" onclick=spin1()></div>
+            <div style="border-radius: 50%;"><img src="assets/2.png" alt="rock" class="imga" onclick=spin2()></div>
+        </div>
+        <div style="display: flex;justify-content: space-around;">
+            <h2>User Score: <b id="user">0</b><input type="number" placeholder="0" id="userinp" class="inputs"><button class="modok" onclick=uinp()>OK</button></h2>
+            <h2>Comp Score: <b id="comp">0</b><input type="number" placeholder="0" id="compinp" class="inputs"><button class="modok" onclick=cinp()>OK</button></h2>
+            <h2>Draw: <b id="draw">0</b><input type="number" placeholder="0" id="drawinp" class="inputs"><button class="modok" onclick=dinp()>OK</button></h2>
+        </div>
+        <div class="ques">
+            <div class="quess" id="quess"><img src="assets/ques.png" alt="?" class="q" id="q"></div>
+        </div>
+    </div>
+</body>
+</html>

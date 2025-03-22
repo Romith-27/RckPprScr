@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RckPprScr</title>
+    <link rel="stylesheet" href="rps.css">
+    <script src="rps.js"></script>
+</head>
+<body id="body">
+    <nav style="display: flex;justify-content: flex-end;">
+        <a href="rpsmod.html" style="text-decoration: none;color: black;"><div><button class="MOD">MOD</button></div></a>
+    </nav>
+    <div class="cont">
+        <div class="rps">
+            <div style="border-radius: 50%;"><img src="assets/0.png" alt="paper" class="imga" onclick=spin0()></div>
+            <div style="border-radius: 50%;"><img src="assets/1.png" alt="scissors" class="imga" onclick=spin1()></div>
+            <div style="border-radius: 50%;"><img src="assets/2.png" alt="rock" class="imga" onclick=spin2()></div>
+        </div>
+        <div style="display: flex;justify-content: space-around;">
+            <h2>User Score: <b id="user">0</b></h2>
+            <h2>Comp Score: <b id="comp">0</b></h2>
+            <h2>Draw: <b id="draw">0</b></h2>
+        </div>
+        <div class="ques">
+            <div class="quess" id="quess"><img src="assets/ques.png" alt="?" class="q" id="q"></div>
+        </div>
+    </div>
+</body>
+</html>
